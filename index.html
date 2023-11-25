@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Articulos</title>
+</head>
+<body>
+    <!--El header es meramente estetico-->
+    <header id="head">
+        <nav>
+            <ul id="navigation">
+                <li class="links">INICIO</li>
+                <li class="links">MENÚ</li>
+                <li class="links">CARRITO</li>
+            </ul>
+        </nav>
+    </header>
+    <!--Main o seccion principal de la interfaz-->
+    <main id="principal">
+        <section id="filtros">
+            <h2>Escoge una seccion</h2>
+            <div id="content">
+                <button class="secciones" id="consumibles" onclick="escribirFamilias()">Consumibles</button>
+                <button class="botonesFamilias" id="uno">BEBIDAS</button>
+                <button class="botonesFamilias" id="dos">COMIDAS</button>
+                <button class="botonesFamilias" id="tres">SALSAS</button>
+
+                <button class="secciones" id="objetos" onclick="escribirFamilias2()">Objetos</button>
+                <button class="botonesFamilias" id="cuatro">OTROS</button>
+            </div>
+        </section>
+        <section id="articulos">
+            <h2 id="h2">Artículos</h2>
+            <button id="cArt" onclick="cargaArt()">Cargar Articulos</button>
+            <p id="artic">
+
+            </p>
+        </section>
+        <section id="lista">
+            <h2>Lista de artículos</h2>
+            <div id="botones">
+                <button id="calcular">Calcular</button>
+                <button id="limpiar">Limpiar</button>
+            </div>
+            <p id="lista_art">
+
+            </p>
+            <span>Total:</span>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

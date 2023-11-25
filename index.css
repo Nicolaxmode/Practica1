@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Inconsolata:wght@300&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*colores*/
+:root {
+    --blanco: #E0E0E0;
+    --azul-opacidad: #184463;
+}
+
+body{
+    color: var(--azul-opacidad);
+    font-family: 'Electrolize', sans-serif;
+    background-color: var(--azul-opacidad);
+}
+
+#head nav ul{
+    display: flex;
+    list-style: none;
+    background-color: var(--blanco);
+    padding: 1.5em;
+    justify-content: space-around;
+    .links{
+        cursor: pointer;
+        border-bottom: solid transparent;
+    }
+    .links:hover{
+        border-bottom: solid var(--azul-opacidad) 2px;
+    }
+}
+
+#principal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2em;
+    #filtros, #lista{
+        background-color: var(--blanco);
+        padding: 2em;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+    #filtros #content{
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        gap: 1em;
+        .botonesFamilias{
+            padding: 1em;
+            color: #184463;
+            background-color: #c8d3db;
+            cursor: pointer;
+            display: none;
+        }
+    }
+    #filtros #content button{
+        background-color: var(--blanco);
+        border: none;
+        border-left: solid transparent;
+        padding: 1em;
+        cursor: pointer;
+        outline: none;
+    }
+    #filtros #content button:hover{
+        border-left: solid var(--azul-opacidad);
+        background-color: #c8d3db;
+        transform: scale(1.1);
+    }
+    #articulos{
+        text-align: center;
+        #cArt{
+            background-color: #184463;
+            color: #c8d3db;
+            border: none;
+            border-radius: 20px;
+            padding: 1em;
+            cursor: pointer;
+            margin-top: 1em;
+        }
+        #cArt:hover{
+            transform: scale(1.1);
+        }
+    }
+    #lista{
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    #lista p{
+        overflow: hidden;
+    }
+    #lista #botones{
+        display: flex;
+        justify-content: space-between;
+    }
+    #lista #botones button{
+        background-color: var(--azul-opacidad);
+        color: #FFFFFF;
+        padding: 0.4em 1.4em;
+        border: none;
+        border: solid transparent;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    #lista #botones button:hover{
+        transform: scale(1.1);
+        background-color: var(--blanco);
+        color: var(--azul-opacidad);
+        border: solid var(--azul-opacidad) 1px;
+    }
+    #articulos{
+        width: 42em;
+        background-color: var(--blanco);
+        padding: 2em;
+        height: 78vh;
+        font-size: 1em;
+        border-radius: 20px;
+    }
+    #articulos p{
+        overflow: hidden;
+    }
+}
